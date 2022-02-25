@@ -1,5 +1,7 @@
 PAGINATE HELPER FUNCTION
 ========================
+
+![alt text](logo.png)
                                                                                                                                                 
 WHAT IS IT?
 
