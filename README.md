@@ -1,5 +1,6 @@
-#PAGINATE HELPER FUNCTION
-                                                                                                                                                      
+PAGINATE HELPER FUNCTION
+========================
+                                                                                                                                                
 WHAT IS IT?
 
 Function that helps you handle pagination.
