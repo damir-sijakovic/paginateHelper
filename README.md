@@ -26,13 +26,13 @@ $arr['indexlastPageItemStart'] = $lastPageItemStart;
 $arr['perPage'] =                $perPage;      
 $arr['currentPage'] =            $currentPage;    
 $arr['indexOffset'] =            $limitFirst;           // index, SQL LIMIT starts from 0    
-$arr['indexRowCount'] =          $perPage;              // index+length    
-$arr['numberOfPages'] =          $numberOfPages;    
-$arr['visibleStartPage'] =       $groupStart;    		// 
-$arr['visibleEndPage'] =         $groupEnd;		  							 
-$arr['firstPage'] = 1;              
-$arr['lastPage'] =               $numberOfPages;	     
-$arr['prevPage'] =               $prevPage;	      
-$arr['nextPage'] =               $nextPage;	     
+$arr['indexRowCount'] =          $perPage;              // index+length        
+$arr['numberOfPages'] =          $numberOfPages;        
+$arr['visibleStartPage'] =       $groupStart;    		//        
+$arr['visibleEndPage'] =         $groupEnd;		      							 
+$arr['firstPage'] = 1;                 
+$arr['lastPage'] =               $numberOfPages;	         
+$arr['prevPage'] =               $prevPage;	          
+$arr['nextPage'] =               $nextPage;	         
        
 HAVE FUN!   
