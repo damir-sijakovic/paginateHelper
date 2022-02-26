@@ -1,7 +1,7 @@
 <?php
 
 //NOTE THAT SQL LIMIT STARTS AS ARRAY, FROM 0
-function paginateHelper($itemNumber, $perPage, $currentPage, $visiblePages=8)
+function paginateHelper($itemNumber, $perPage, $currentPage, $visiblePages=3)
 {	
 	if (!is_int($itemNumber) || $itemNumber === 0)
 	{
@@ -78,6 +78,34 @@ function paginateHelper($itemNumber, $perPage, $currentPage, $visiblePages=8)
 	{
 		$nextPage = null;
 	}
+			
+	
+	if ($lastPageItemEnd > $itemNumber)
+	{
+		$lastPageItemEnd = $itemNumber;
+	}		
+				
+					
+	if ($lastPageItemEnd > $itemNumber)
+	{
+		$lastPageItemEnd = $itemNumber;
+	}		
+					
+				
+		
+	if (($limitFirst + $perPage) > $itemNumber)
+	{
+		// echo ($limitFirst + $perPage) - $itemNumber + 1;	
+		$indexRowCount = ($limitFirst + $perPage) - $itemNumber + 1;
+	}	
+	else
+	{
+		$indexRowCount = $perPage;
+	}
+	
+					
+	//[indexOffset] => 28
+    //[indexRowCount] => 7				
 					
 	
 	$arr = [];
@@ -87,7 +115,7 @@ function paginateHelper($itemNumber, $perPage, $currentPage, $visiblePages=8)
 	$arr['perPage'] =                $perPage;
 	$arr['currentPage'] =            $currentPage;
 	$arr['indexOffset'] =            $limitFirst; //index, SQL LIMIT starts from 0
-	$arr['indexRowCount'] =          $perPage; //index+length
+	$arr['indexRowCount'] =          $indexRowCount; //index+length
 	$arr['numberOfPages'] =          $numberOfPages;
 	$arr['visibleStartPage'] =       $groupStart;
 	$arr['visibleEndPage'] =         $groupEnd;	
